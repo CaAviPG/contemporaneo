@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+// import Card from './components/Card'
+import Header from './components/Header'
+import Home from './components/Home';
+import Footer from './components/Footer';
+import Banner from './components/Banner';
+
+// import info from'./info.json'
 
 function App() {
+  // const nombre =
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="container-fluid">
+      <Header/>
+
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Bienvenido
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <Home />
+      <Footer/>
     </div>
   );
 }
